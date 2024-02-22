@@ -8,7 +8,10 @@
 
 let mycreteddate=new Date(2023,1,23)
 console.log(mycreteddate.toDateString());
-// months start from monday
+console.log(mycreteddate.getDate());
+console.log(mycreteddate.getMonth()+1);
+console.log(mycreteddate.getDay());
+// months start from 0 index
 let mycreteddateandtime=new Date(2023,1,23,5,4)
 console.log(mycreteddateandtime.toLocaleString());
 
@@ -20,3 +23,10 @@ let mytimestamp= Date.now()
 console.log(mytimestamp);
 
 console.log(Math.floor(Date.now()/1000));
+
+console.log(`${mycreteddate.getDay()} and the time `);
+newDate.toLocaleString('default', {
+    weekday:"long",
+    
+    
+})
