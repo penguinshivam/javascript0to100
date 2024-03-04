@@ -17,11 +17,15 @@ if (userEmail) {
 //     console.log("Array is empty");
 // }
 
-const emptyObj = {}
+const emptyObj = {
+    name:"shivam"
+}
 
 if (Object.keys(emptyObj).length === 0) {
     console.log("Object is empty");
 }
+else
+console.log("object contain some keys");
 
 // Nullish Coalescing Operator (??): null undefined
 
