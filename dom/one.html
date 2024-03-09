@@ -3,11 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">Dom Learning</h1>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">Dom Learning<span style="display: none;">test text</span></h1>
         <p>Lorem ipsum dolor sit amet</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
     </div>
+    
 </body>
 </html>
+
+<!-- 
+document.querySelectorAll('h2')
+NodeList(5) [h2.vector-pinnable-header-label, h2, h2, h2, h2]
+const allh2=document.querySelectorAll('h2')
+undefined
+all
+VM4359:1 Uncaught ReferenceError: all is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM4359:1
+allh2[0].innerText
+''
+allh2[1].innerText
+'Early life[edit]'
+allh2[0].innerText
+'Contents'
+document.querySelectorAll('.mw-headline')
+NodeList(8) [span#Early_life.mw-headline, span#Career.mw-headline, span#Netscape.mw-headline, span#Mozilla.mw-headline, span#Appointment_to_CEO_and_resignation.mw-headline, span#Brave_Software.mw-headline, span#References.mw-headline, span#External_links.mw-headline]
+const myh1=document.querySelectorAll('.mw-headline')
+undefined
+myh1[0].innerText
+'Early life'
+myh1.forEach(function (h) {
+    h.style.color='red'
+})
+undefined
+myh1.forEach(function (h) {
+    h.style.color='red':
+})
+VM4989:2 Uncaught SyntaxError: Unexpected token ':'
+myh1.forEach(function (h) {
+    h.style.color='red';
+})
+undefined
+myh1.forEach(function (h) {
+    h.style.color='red';
+    h.style.backgroundColor='green'
+})
+undefined
+myh1.forEach(function (h) {
+    h.style.color='red';
+    h.style.backgroundColor='green';
+    h.innertext='shivam'
+})
+undefined
+myh1.forEach(function (h) {
+    h.style.color='red';
+    h.style.backgroundColor='green';
+    h.innerText="shivam"
+}) -->
