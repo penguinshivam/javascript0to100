@@ -1,6 +1,6 @@
 // stack (primitive)(copy) heap (non - primitive)(referance value)
 
-let myyouname="techboss"
+let myyouname="tech"
 let anothername=myyouname
 anothername="newname"
 console.log(myyouname);
