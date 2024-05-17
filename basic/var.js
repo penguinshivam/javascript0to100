@@ -7,5 +7,6 @@ accountcity="jaipur"
 accountemail="ggg"
 accountPassword="22222" 
 accountcity="delhi"
+
 console.log(accountId);
 console.table([accountId,accountPassword,accountemail,accountcity])
